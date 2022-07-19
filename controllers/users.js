@@ -24,7 +24,11 @@ async function login(req, res) {
 
     const authed = bcrypt.compare(req.body.password, user.password);
     if (!!authed) {
-      res.status(200).json({ user: user.username, email: user.email });
+      res.status(200).json({
+        user: user.username,
+        email: user.email,
+        password: user.password,
+      });
     } else {
       throw new Error("User Could Not Be Authenticated :(");
     }
