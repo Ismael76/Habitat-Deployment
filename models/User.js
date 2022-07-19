@@ -45,6 +45,7 @@ class User {
         ]);
 
         let selectedUser = new User(userData.rows[0]);
+        console.log(selectedUser);
         resolve(selectedUser);
       } catch (err) {
         resolve();
