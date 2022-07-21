@@ -1,2 +1,2 @@
 # Habitat-Server
-- Deployment Repo For `Habitat` App!
+- Server Deployment Repo For `Habitat` App!
